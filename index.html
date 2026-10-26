@@ -476,13 +476,9 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:16
 
 
 function openWidget(serviceId){
-var iframe=document.querySelector('iframe[src*="alteg"]')||document.querySelector('iframe[src*="1475901"]');
-if(iframe&&serviceId){
-var url=iframe.src.split('?')[0];
-iframe.src=url+'?o='+serviceId;
-}
-var b=document.querySelector('.yButtonText')||document.querySelector('[class*=yButton]');
-if(b){b.click();}
+var url='https://n1475901.alteg.io/';
+if(serviceId)url+='?o='+serviceId;
+if(typeof yWidget!=='undefined'&&yWidget.show){yWidget.show(url);}
 }
 
 function switchTo(t){
