@@ -476,13 +476,8 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:16
 
 
 function openWidget(){
-var btns=document.querySelectorAll('body>div:not([id]) button, body>div:not([id]) a, [class*=widget], [class*=Widget], [id*=widget], [id*=Widget]');
-for(var i=0;i<btns.length;i++){
-var s=window.getComputedStyle(btns[i]);
-if(s.position==='fixed'||s.position==='absolute'){btns[i].click();return;}
-}
-var iframes=document.querySelectorAll('iframe[src*=alteg]');
-if(iframes.length){iframes[0].parentElement.style.display='block';return;}
+var b=document.querySelector('.yButtonText')||document.querySelector('[class*=yButton]');
+if(b){b.click();return;}
 }
 
 function switchTo(t){
