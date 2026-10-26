@@ -165,7 +165,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:16
 
 /* BOOKING */
 .book-wrap{max-width:min(1340px,100%);margin:60px auto 0;padding:0 16px}
-.book{overflow:hidden;background:linear-gradient(135deg,#c4dfe8 0%,#cde6e2 35%,#d5ebdf 65%,#ddf0e4 100%);border-radius:32px;padding:60px 40px;text-align:center;position:relative}
+.book{overflow:hidden;background:linear-gradient(180deg,#c4dfe8 0%,#d5ebdf 30%,#e8eded 60%,#f0f0f0 100%);border-radius:32px;padding:60px 40px;text-align:center;position:relative}
 .book-h{position:relative;z-index:1;font-size:clamp(26px,5vw,36px);font-weight:700;color:var(--dark);margin-bottom:8px}
 .book-sub{position:relative;z-index:1;font-size:15px;color:var(--text);margin-bottom:32px}
 .book-widget{position:relative;z-index:1;background:transparent;border-radius:0;overflow:hidden}
@@ -442,16 +442,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:16
 </div>
 </div>
 
-<!-- BOOKING -->
-<div class="book-wrap" id="booking">
-<div class="book">
-<svg class="book-decor heart" viewBox="0 0 28 28" fill="none"><path d="M14 24 C14 24 4 18 4 11 C4 7.5 7 5 10 5 C12 5 13.5 6.5 14 7.5 C14.5 6.5 16 5 18 5 C21 5 24 7.5 24 11 C24 18 14 24 14 24Z" stroke="#6ebdad" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<svg class="book-decor plaster" viewBox="0 0 120 120" fill="none"><rect x="10" y="35" width="100" height="50" rx="25" stroke="#6ebdad" stroke-width="3.5" fill="none"/><rect x="35" y="10" width="50" height="100" rx="25" stroke="#6ebdad" stroke-width="3.5" fill="none"/><circle cx="52" cy="54" r="3" fill="#6ebdad"/><circle cx="68" cy="54" r="3" fill="#6ebdad"/><circle cx="52" cy="68" r="3" fill="#6ebdad"/><circle cx="68" cy="68" r="3" fill="#6ebdad"/></svg>
-<h2 class="book-h">Записатися на консультацію</h2>
-<p class="book-sub">Оберіть напрям, послугу, дату та зручний час.</p>
-<div class="book-widget"><iframe src="https://n1475901.alteg.io" style="width:100%;min-height:800px;border:none;border-radius:16px;display:block" allowfullscreen></iframe></div>
-</div>
-</div>
+
 
 <!-- CONTACTS -->
 <section class="contacts" id="contacts">
@@ -496,5 +487,6 @@ if(n>0)btn.classList.add('show');else btn.classList.remove('show');
 }
 document.querySelectorAll('.hdr-nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})}); 
 </script>
+<script type="text/javascript" src="https://w1475901.alteg.io/widgetJS" charset="UTF-8"></script>
 </body>
 </html>
